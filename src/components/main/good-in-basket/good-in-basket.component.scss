@@ -1,0 +1,75 @@
+.GoodInBasket {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+  width: 982px;
+  position: relative;
+
+  // border: 1px solid black;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__button-container-and-price {
+    display: flex;
+    justify-content: space-between;
+    width: 780px;
+  }
+  &__button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.3rem;
+    width: 140px;
+    height: 30px;
+    color: rgb(250, 255, 255);
+    border-radius: 0.5rem;
+    background-color: rgb(183, 155, 126);
+    & button {
+      width: 30px;
+      height: 100%;
+      background-color: rgb(183, 155, 126);
+      border: none;
+      color: rgb(250, 255, 255);
+      border-radius: 1rem;
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__container-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__container-title-title {
+    font-size: 24px;
+    font-family: var(--ff);
+    font-weight: 600;
+  }
+
+  &__container-title-price {
+    color: rgb(208, 168, 126);
+    font-size: 1rem;
+    font-family: var(--ff);
+  }
+
+  &__button-container-price {
+    // color: rgb(208, 168, 126);
+    font-size: 24px;
+    font-family: var(--ff);
+  }
+
+  // &__container-total-sum {
+  //   max-height: 142px;
+  //   overflow: hidden;
+  //   border: 1px solid black;
+  // }
+}

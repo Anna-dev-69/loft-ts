@@ -1,0 +1,38 @@
+.NewItems {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  // flex-direction: column;
+
+  &__container {
+    max-width: 1408px;
+    height: 940px;
+
+    display: flex;
+    justify-content: center;
+    // border: 1px solid black;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    // align-items: center;
+  }
+  &__container-ul {
+    // border: 1px solid black;
+    height: 58px;
+  }
+
+  &__ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__container-tab-title {
+    // text-decoration: underline;
+    border-bottom: 2px solid rgb(183, 155, 126);
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 300ms;
+    display: inline-block;
+  }
+}

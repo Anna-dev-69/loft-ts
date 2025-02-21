@@ -1,0 +1,123 @@
+%flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+%flexCenter {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.SearchPage {
+  @extend %flexColumn;
+  // margin: auto;
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    min-height: 572px;
+  }
+
+  &__container {
+    @extend %flexColumn;
+    width: 1408px;
+
+    // border: 1px solid black;
+  }
+
+  &__container-links {
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+    font-family: var(--ff);
+    color: rgb(205, 205, 205);
+    height: 70px;
+    @extend %flexCenter;
+  }
+
+  &__container-search {
+    @extend %flexCenter;
+    flex-direction: column;
+    align-items: start;
+
+    & h1 {
+      font-size: 24px;
+      font-family: var(--ff);
+      color: #333333;
+      font-weight: 450;
+      height: 74px;
+      display: flex;
+      align-items: end;
+      padding-bottom: 0.5rem;
+    }
+    & button {
+      cursor: pointer;
+    }
+  }
+
+  &__container-search-and-button {
+    display: flex;
+
+    & input {
+      width: 450px;
+      border-radius: 7px 0 0px 7px;
+      font-size: 1rem;
+      border: 1px solid rgb(128, 128, 128);
+      padding-left: 0.5rem;
+      height: 50px;
+    }
+
+    & button {
+      width: 50px;
+      height: 50px;
+      border-radius: 0 7px 7px 0;
+      border: none;
+      background-color: rgb(191, 166, 140);
+
+      & img {
+        filter: var(--filter-img);
+      }
+    }
+  }
+
+  &__container-search-container {
+    @extend %flexCenter;
+    height: 96px;
+  }
+
+  &__container-goods-ul {
+    @extend %flexCenter;
+    gap: 2rem;
+    width: 1408px;
+    // border: 1px solid black;
+    height: fit-content;
+    flex-wrap: wrap;
+
+    & li {
+      height: 540px;
+      & button {
+        width: 256px;
+        height: 40px;
+        background-color: rgb(191, 166, 140);
+        border: none;
+        border-radius: 0.5rem;
+        color: #fff;
+        opacity: 0;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    // position: absolute;
+    // left: 0;
+    // bottom: 0;
+  }
+}
+.SearchPage__container-goods-ul-li:hover button {
+  opacity: 1;
+  transition: opacity 300ms;
+  cursor: pointer;
+}

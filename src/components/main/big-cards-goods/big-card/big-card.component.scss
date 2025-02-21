@@ -1,0 +1,16 @@
+.BigCard {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    height: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 1rem;
+    font-size: 24px;
+    font-family: var(--ff);
+    color: rgb(51, 51, 51);
+    background-color: rgb(248, 248, 248);
+  }
+}

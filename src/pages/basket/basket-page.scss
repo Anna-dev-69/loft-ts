@@ -1,0 +1,45 @@
+.BasketPage {
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    min-height: 500px;
+  }
+
+  &__container-inner {
+    width: 1408px;
+    // border: 1px solid black;
+  }
+  &__container-title {
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 24px;
+    color: #333333;
+  }
+
+  &__container-goods-and-total {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__container-goods {
+    height: fit-content;
+    width: 982px;
+  }
+
+  &__container-goods-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    // height: 162px;
+    width: 982px;
+  }
+
+  &__container-goods-ul-li {
+    display: flex;
+  }
+}

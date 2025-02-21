@@ -1,0 +1,15 @@
+.NavMiddle {
+  display: flex;
+  justify-content: center;
+  min-height: 96px;
+  &__container {
+    width: 1408px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__container-logo {
+    width: 100px;
+  }
+}

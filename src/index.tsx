@@ -1,19 +1,35 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import "./_variables.css";
+import App from "./App";
+import Store, { StoreContext } from "./store";
+import navTopPanel from "./data/navTopPanel";
+import newItems from "./data/new-items.object";
+import bestsellers from "./data/bestsellers.object";
+import hotPrice from "./data/hot-price.object";
+import allGoods from "./data/all-goods";
+import bigCard from "./data/big-card.object";
+
+const countGoods: number = 0;
+const cartItemsById = {};
+
+const store = new Store({
+  navTopPanel,
+  newItems,
+  bestsellers,
+  hotPrice,
+  countGoods,
+  allGoods,
+  bigCard,
+  cartItemsById,
+});
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
-  <React.StrictMode>
+  <StoreContext.Provider value={store}>
     <App />
-  </React.StrictMode>
+  </StoreContext.Provider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

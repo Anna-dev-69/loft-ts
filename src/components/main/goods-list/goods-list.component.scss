@@ -1,0 +1,33 @@
+.GoodsList {
+  // border: 1px solid black;
+  // height: 858px;
+
+  &__button {
+    width: 256px;
+    height: 40px;
+    background-color: rgb(191, 166, 140);
+    border: none;
+    border-radius: 0.5rem;
+    color: #fff;
+    opacity: 0;
+  }
+
+  &__ul {
+    // border: 1px solid black;
+    width: 100%;
+    overflow: hidden;
+    // margin-top: 2rem;
+    width: 1408px;
+    // height: 852px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+.GoodsList__ul-li:hover button {
+  opacity: 1;
+  transition: opacity 300ms;
+  cursor: pointer;
+}

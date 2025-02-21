@@ -1,0 +1,33 @@
+.ControlsMenu {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+
+  &__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  & img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__cart-container {
+    // border: 1px solid black;
+    display: flex;
+    position: relative;
+  }
+
+  &__cart-container-count {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+
+    // border: 1px solid black;
+  }
+}

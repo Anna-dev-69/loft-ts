@@ -1,0 +1,28 @@
+.BigCardsGoods {
+  display: flex;
+  justify-content: center;
+  &__container {
+    width: 1408px;
+    // border: 1px solid black;
+  }
+
+  &__container-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+
+// .BigCardsGoods__li-1,
+// .BigCardsGoods__li-2,
+// .BigCardsGoods__li-3 {
+//   flex-basis: 33.33%;
+// }
+
+// .BigCardsGoods__li-4,
+// .BigCardsGoods__li-5,
+// .BigCardsGoods__li-6,
+// .BigCardsGoods__li-7 {
+//   flex-basis: 25%;
+// }
