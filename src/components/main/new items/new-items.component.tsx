@@ -8,11 +8,6 @@ import GoodsList from "../goods-list/goods-list.component";
 interface NewItemsProps {}
 
 const NewItems = () => {
-  const store = useStore();
-  const newItems = useSelector((state) => state.newItems);
-  const bestsellers = useSelector((s) => s.bestsellers);
-  const hotPrice = useSelector((s) => s.hotPrice);
-
   const [currentTab, setCurrentTab] = useState(0);
 
   return (

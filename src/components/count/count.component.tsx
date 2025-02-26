@@ -18,8 +18,8 @@ const Count = (props: CountProps) => {
     <div
       style={{
         backgroundColor: "#1B2728",
-        width: "15px",
-        height: "15px",
+        width: "18px",
+        height: "18px",
         borderRadius: "50%",
         color: "#ffff",
         display: "flex",

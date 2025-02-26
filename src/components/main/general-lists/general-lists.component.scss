@@ -1,0 +1,29 @@
+.GeneralLists {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  &__container {
+    width: 1408px;
+    height: 296px;
+    overflow: hidden;
+  }
+
+  &__container-ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid black;
+  }
+
+  &__container-ul-li {
+  }
+
+  &__container-ul-li-container-a {
+    display: flex;
+
+    align-items: center;
+    padding-left: 6rem;
+    margin-top: 0.3rem;
+  }
+}

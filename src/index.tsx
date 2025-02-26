@@ -10,6 +10,7 @@ import bestsellers from "./data/bestsellers.object";
 import hotPrice from "./data/hot-price.object";
 import allGoods from "./data/all-goods";
 import bigCard from "./data/big-card.object";
+import generalList from "./data/general-list";
 
 const countGoods: number = 0;
 const cartItemsById = {};
@@ -23,6 +24,7 @@ const store = new Store({
   allGoods,
   bigCard,
   cartItemsById,
+  generalList,
 });
 
 const root = ReactDOM.createRoot(

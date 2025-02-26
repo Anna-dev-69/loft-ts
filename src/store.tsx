@@ -37,6 +37,13 @@ interface BigCard {
   title: string;
 }
 
+interface GeneralList {
+  href: string;
+  imgSrc: string;
+  title: string;
+  body: string[];
+}
+
 interface StoreState {
   navTopPanel: navTopPanel[];
   newItems: NewItems[];
@@ -46,6 +53,7 @@ interface StoreState {
   allGoods: AllGoods[];
   bigCard: BigCard[];
   cartItemsById: CartItemsById;
+  generalList: GeneralList[];
 }
 
 type StoreListener = (state: StoreState) => void;

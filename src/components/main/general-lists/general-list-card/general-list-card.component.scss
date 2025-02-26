@@ -1,0 +1,35 @@
+.GeneralListCard {
+  display: flex;
+  gap: 1rem;
+
+  &__container-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img-container {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 0.5rem;
+  }
+
+  &__container-text-ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-family: var(--ff);
+    color: #333333;
+  }
+  &__container-div-ul {
+    // border: 1px solid black;
+
+    & ul {
+      height: 230px;
+      overflow: hidden;
+      // border: 1px solid black;
+    }
+  }
+}

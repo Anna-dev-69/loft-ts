@@ -31,7 +31,7 @@ const BasketPage = () => {
       return item.product.price * selectedGood[index];
     }
   );
-  console.log("selectedItems", selectedItems);
+  // console.log("selectedItems", selectedItems);
   // const countGoods = selectedGood.reduce((acc, item) => acc + item, 0);
 
   const addGood = (index: number) => {

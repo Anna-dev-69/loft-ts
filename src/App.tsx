@@ -20,10 +20,6 @@ function App(props: RouterProps) {
         <Route path="/basketPage" element={<BasketPage />} />
       </Routes>
     </Router>
-    // <div className="App">
-    //   <Header />
-    //   <Main />
-    // </div>
   );
 }
 

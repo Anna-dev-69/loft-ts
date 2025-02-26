@@ -11,13 +11,13 @@ interface GoodsListProps {
 
 const GoodsList = (props: GoodsListProps) => {
   const store = useStore();
-  const [likes, setLikes] = useState<boolean[]>([]);
-  const [isLike, setIsLike] = useState(false);
+  const [likes, setLikes] = useState<boolean[]>(
+    new Array(props.itemList.length).fill(false)
+  );
 
   const handleClickLike = (index: number) => {
     const newLike = [...likes];
     newLike[index] = !newLike[index];
-    setIsLike((p) => !p);
     setLikes(newLike);
   };
 
@@ -27,16 +27,11 @@ const GoodsList = (props: GoodsListProps) => {
         {props.itemList.map((item, index) => (
           <li key={item.title} className="GoodsList__ul-li">
             <div>
-              {/* {likes.map((isLike, index) => ( */}
               <CardGood
-                key={index}
-                isLike={isLike}
-                onLike={() => handleClickLike(index)}
                 imgSrc={item.imgSrc}
                 title={item.title}
                 price={item.price}
               />
-              {/* ))} */}
             </div>
             <button
               onClick={() => addGood(store, item)}

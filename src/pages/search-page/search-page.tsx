@@ -3,10 +3,11 @@ import "./search-page.scss";
 import glass from "../../assets/glass.svg";
 import { useSelector, useStore } from "../../store";
 import { useEffect, useState } from "react";
-import CardGood from "../../components/main/card-good/card-good.component";
+// import CardGood from "../../components/main/card-good/card-good.component";
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer/footer.component";
 import addGood from "../../data/addGood";
+import CardGood from "../../components/main/card-good/card-good.component";
 
 const SearchPage = () => {
   const store = useStore();
@@ -18,13 +19,13 @@ const SearchPage = () => {
   const [like, setLike] = useState<boolean[]>([]);
   const [isLike, setIsLike] = useState(false);
 
-  const handleClickLike = (index: number) => {
-    const newLike = [...like];
-    newLike[index] = !newLike[index];
+  // const handleClickLike = (index: number) => {
+  //   const newLike = [...like];
+  //   newLike[index] = !newLike[index];
 
-    setIsLike((p) => !p);
-    setLike(newLike);
-  };
+  //   setIsLike((p) => !p);
+  //   setLike(newLike);
+  // };
 
   const handleChangeValue = (e: any) => {
     setValue(e.target.value);
@@ -82,9 +83,9 @@ const SearchPage = () => {
                     className="SearchPage__container-goods-ul-li"
                   >
                     <CardGood
-                      key={index}
-                      isLike={isLike}
-                      onLike={() => handleClickLike(index)}
+                      // keyGood={index}
+                      // isLike={isLike}
+                      // onLike={() => handleClickLike(index)}
                       imgSrc={item.imgSrc}
                       title={item.title}
                       price={item.price}

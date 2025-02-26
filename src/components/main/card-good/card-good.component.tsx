@@ -5,10 +5,7 @@ interface CardGoodProps {
   imgSrc: string;
   title: string;
   price: number;
-  // like: boolean[];
-  onLike: () => void;
-  isLike: boolean;
-  key: number;
+  // onLike: () => void;
 }
 
 const CardGood = (props: CardGoodProps) => {
@@ -16,9 +13,8 @@ const CardGood = (props: CardGoodProps) => {
     <div className="CardGood">
       <div className="CardGood__container">
         <img
-          key={props.key}
-          onClick={props.onLike}
-          style={props.isLike ? { filter: "var(--filter-like)" } : {}}
+          // onClick={props.onLike}
+          style={{ filter: "var(--filter-like)" }}
           className="CardGood__heart"
           src={heart}
           alt=""
